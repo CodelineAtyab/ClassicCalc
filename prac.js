@@ -1,11 +1,14 @@
-let x = 0;
+setTimeout(()=>{
+    let myHeading2 = document.getElementById("myMsg");
+    myHeading2.innerHTML = "You are selected.....";
+}, 3000)
 
-calcPow = (x, y) => {
-    return x*y;
-}
+let x = 0;
 
 function calcPow(base, exp) {
     return Math.pow(base, exp);
 }
 
 console.log(calcPow(8,2));
+
+console.log("Hello World");
