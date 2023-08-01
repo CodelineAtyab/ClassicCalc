@@ -10,5 +10,4 @@ function calcPow(base, exp) {
 }
 
 console.log(calcPow(8,2));
-
 console.log("Hello World");
