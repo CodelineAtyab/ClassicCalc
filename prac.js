@@ -13,5 +13,22 @@ console.log(calcPow(8,2));
 function calcAdd(a, b) {
     return a + b;
   }
-  const result = calcAdd(3, 5);
-console.log(result); // Output: 8
+
+  const form = document.getElementById("addForm");
+  const resultElement = document.getElementById("result");
+
+  form.addEventListener("submit", function(event) {
+    event.preventDefault();
+    const num1 = parseFloat(document.getElementById("num1").value);
+    const num2 = parseFloat(document.getElementById("num2").value);
+
+    if (isNaN(num1) || isNaN(num2)) {
+      resultElement.textContent = "Please enter valid numbers.";
+    } else {
+      const result = calcAdd(num1, num2);
+      resultElement.textContent = "The sum is: " + result;
+    }
+});
+function openNewPage() {
+    window.open("https://www.calculator.net/scientific-calculator.html", "_blank"); 
+}
