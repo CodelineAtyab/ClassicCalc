@@ -12,3 +12,15 @@ function calcPow(base, exp) {
 console.log(calcPow(8,2));
 
 console.log("Hello World");
+
+const calculator = {
+    MOd: function(a, b) {
+      return a % b;
+    },
+  };
+  
+  // Test the MOD method
+  const num1 = 15;
+  const num2 = 4;
+  const result = calculator.MOd(num1, num2);
+  console.log(`${num1} % ${num2} = ${result}`);
