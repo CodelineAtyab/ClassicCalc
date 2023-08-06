@@ -33,5 +33,20 @@ const calculator = {
   const myResult = calculator.MOD(num1, num2);
   console.log(`${num1} % ${num2} = ${result}`);
 
-
+  function countOccurrences (arr) {
+    let counts = {};
+    for (let num of arr) {
+      if (counts [num]) {
+        counts [num]++;
+      } else {
+        counts [num] = 1;
+      }
+    }
+    return counts;
+  }
+  
+  let numbers = [5, 5, 5, 2, 2, 2, 2, 2, 9, 4];
+  let result2 = countOccurrences (numbers);
+  // Log the result2
+  console.log (result2);
 
