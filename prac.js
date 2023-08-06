@@ -33,5 +33,11 @@ const calculator = {
   const myResult = calculator.MOD(num1, num2);
   console.log(`${num1} % ${num2} = ${result}`);
 
+  function isPalindromeNumber(number) {
+    const numString = number.toString();
+    const reversedNumString = numString.split('').reverse().join('');
+    return numString === reversedNumString;
+  }
+
 
 
