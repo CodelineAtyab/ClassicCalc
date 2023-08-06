@@ -1,3 +1,9 @@
+function divide(a, b) {
+  let quotient = (a / b) >> 0
+  let remainder = a % b;
+  return [quotient, remainder];
+}
+
 const calculator = {
     MOD: function(a, b) {
       return a % b;
@@ -9,3 +15,4 @@ const calculator = {
   const num2 = 4;
   const result = calculator.MOD(num1, num2);
   console.log(`${num1} % ${num2} = ${result}`);
+
