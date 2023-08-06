@@ -1,3 +1,11 @@
+
+function calcAdd(a, b) {
+    return a + b;
+  }
+  const result1 = calcAdd(10, 20);
+  console.log(result1); // Output: 30
+  
+
 console.log("Difference Method");
 function calculateDifference(num1, num2) {
     return num1 - num2;
@@ -24,5 +32,6 @@ const calculator = {
   const num2 = 4;
   const myResult = calculator.MOD(num1, num2);
   console.log(`${num1} % ${num2} = ${result}`);
+
 
 
